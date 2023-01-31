@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>VueCalculator</title>
-    <link rel="stylesheet" href="/assets/styles/index.css" />
+<!--    <link rel="stylesheet" href="/assets/styles/index.css" /> -->
     <style>
       @font-face {
         font-family: emoji;
@@ -27,30 +27,29 @@
     </style>
   </head>
 
-  <body>
+<body>
     <div id="app" class="container">
       <div class="row">
         <div class="col">
-          <input type="number" />
+          <input type="number"  v-model="inputOne" />{{ inputOne }}
         </div>
 
         <div class="col" style="display: flex; flex-direction: column; font-family: emoji">
-          <label><input type="radio" name="operator" value="sum" /> ➕</label>
-          <label><input type="radio" name="operator" value="subtract" /> ➖</label>
-          <label><input type="radio" name="operator" value="multiply" /> ✖</label>
-          <label><input type="radio" name="operator" value="divide" /> ➗</label>
+          <label><input type="radio" name="operator" value="sum" v-model="selOperator" /> ➕</label>
+          <label><input type="radio" name="operator" value="subtract" v-model="selOperator"/> ➖</label>
+          <label><input type="radio" name="operator" value="multiply" v-model="selOperator"/> ✖</label>
+          <label><input type="radio" name="operator" value="divide"  v-model="selOperator"/> ➗</label>
         </div>
 
         <div class="col">
-          <input type="number" />
+          <input type="number" v-model="inputTwo" />{{ inputTwo }} [{{ selOperator }}]
         </div>
 
         <div class="col">=</div>
 
-        <output class="col">0</output>
+        <output class="col">{{ Result }}</output>
       </div>
     </div>
 
-    <script type="module" src="./script.js"></script>
-  </body>
+    <script type="module" src="./script.js"></script></body>
 </html>
