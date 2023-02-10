@@ -17,10 +17,10 @@
           <input type="search" v-model="inputTxt"/>
         </div>
         <ul>
-	<template v-for="item in emailsList">
-	   <li v-if="item.f == 1" class="marked">{{ item.name }}</li>
-	   <li v-else>{{ item.name }}</li>
-	</template>		
+	      <template v-for="item in emailsList">
+	        <li v-if="item.f == 1" class="marked">{{ item.name }}</li>
+	        <li v-else>{{ item.name }}</li>
+	      </template>		
         </ul>
       </div>
     </div>
