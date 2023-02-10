@@ -44,7 +44,6 @@ const App = {
 				this.emls.forEach((val) => {								
 					let newVal = { name: val.name, f:(val.name.includes(this.inputTxt.trim())) ? 1 : 0 }								
 					newEList[i++] = newVal; 
-					console.log('val '+i,newVal.name, newVal.f);
 				});
 				return newEList;												
 			} else return this.emls;			
