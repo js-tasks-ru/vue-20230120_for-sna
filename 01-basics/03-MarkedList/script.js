@@ -39,18 +39,7 @@ const App = {
 
  computed: {
 		emailsList() {	// Новый список email-ов
-<<<<<<< HEAD
 		   return (this.inputTxt.trim().length > 0) ? this.emls.map(ems => ({ name: ems.name, f:(ems.name.includes(this.inputTxt.trim())) ? 1 : 0 })) : this.emls;
-=======
-			if ( this.inputTxt.trim().length > 0 ) {					
-				let newEList = []; let i = 0;
-				this.emls.forEach((val) => {								
-					let newVal = { name: val.name, f:(val.name.includes(this.inputTxt.trim())) ? 1 : 0 }								
-					newEList[i++] = newVal; 
-				});
-				return newEList;												
-			} else return this.emls;			
->>>>>>> da75f02c9b7b8c51122872ac7edba6fee4ee4e92
 		},
  }
 } //app
