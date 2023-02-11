@@ -17,16 +17,9 @@
           <input type="search" v-model="inputTxt"/>
         </div>
         <ul>
-<<<<<<< HEAD
-	 <template v-for="item in emailsList">
-	   <li :class="{'marked' :item.f === 1}">{{ item.name }}</li>
-	</template>		
-=======
 	      <template v-for="item in emailsList">
-	        <li v-if="item.f == 1" class="marked">{{ item.name }}</li>
-	        <li v-else>{{ item.name }}</li>
+	        <li :class="{'marked' :item.f === 1}">{{ item.name }}</li>
 	      </template>		
->>>>>>> da75f02c9b7b8c51122872ac7edba6fee4ee4e92
         </ul>
       </div>
     </div>
