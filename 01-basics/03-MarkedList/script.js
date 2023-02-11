@@ -39,15 +39,7 @@ const App = {
 
  computed: {
 		emailsList() {	// Новый список email-ов
-			if ( this.inputTxt.trim().length > 0 ) {					
-				let newEList = []; let i = 0;
-				this.emls.forEach((val) => {								
-					let newVal = { name: val.name, f:(val.name.includes(this.inputTxt.trim())) ? 1 : 0 }								
-					newEList[i++] = newVal; 
-					console.log('val '+i,newVal.name, newVal.f);
-				});
-				return newEList;												
-			} else return this.emls;			
+		   return (this.inputTxt.trim().length > 0) ? this.emls.map(ems => ({ name: ems.name, f:(ems.name.includes(this.inputTxt.trim())) ? 1 : 0 })) : this.emls;
 		},
  }
 } //app
