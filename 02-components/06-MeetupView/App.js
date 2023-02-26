@@ -11,7 +11,7 @@ export default defineComponent({
 
   data() {
     return {
-      meetup: meetups[2],
+      meetup: meetups[1],
     };
   },
 

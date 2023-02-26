@@ -5,6 +5,6 @@ export default defineComponent({
 
   template: `
     <div class="container">
-      <slot />
+      <slot/>
     </div>`,
 });

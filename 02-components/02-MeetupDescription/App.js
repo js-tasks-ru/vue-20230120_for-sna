@@ -34,7 +34,7 @@ export default defineComponent({
 
       <h3>Описание</h3>
 
-      <MeetupDescription :description="description" />
+      <MeetupDescription  :description="description" />
     </div>
   `,
 });

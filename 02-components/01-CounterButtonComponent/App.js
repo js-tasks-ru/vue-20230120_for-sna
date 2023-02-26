@@ -1,4 +1,4 @@
-import { defineComponent } from './vendor/vue.esm-browser.js';
+﻿import { defineComponent } from './vendor/vue.esm-browser.js';
 import CounterButton from './CounterButton.js';
 
 export default defineComponent({
@@ -10,19 +10,22 @@ export default defineComponent({
 
   data() {
     return {
-      count: undefined,
+      count: 0,
     };
   },
+
 
   template: `
     <div class="sample container">
       <p>count = {{ count }}</p>
       <p>
-        <CounterButton :count="count" @update:count="count = $event" />
+        <CounterButton :count="count" @update:count="this.count++"/>
       </p>
-      <p>
+	  
+      <p>	  
         <CounterButton v-model:count="count" />
       </p>
+	  
       <p>
         <CounterButton v-model:count="count" />
       </p>
