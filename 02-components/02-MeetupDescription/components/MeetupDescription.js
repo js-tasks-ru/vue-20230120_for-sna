@@ -6,7 +6,7 @@ export default defineComponent({
   props: {
 	description: {
 		type: String,
-		requuired: true		
+		required: true		
 	}	
   },
 

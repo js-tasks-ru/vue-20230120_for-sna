@@ -1,5 +1,8 @@
 import { defineComponent } from '../vendor/vue.esm-browser.js';
+
+// failed 
 import MeetupView from './MeetupView.js';
+
 import UiContainer from './UiContainer.js';
 import UiAlert from './UiAlert.js';
 
