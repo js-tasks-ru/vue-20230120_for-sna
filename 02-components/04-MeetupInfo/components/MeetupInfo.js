@@ -6,17 +6,17 @@ export default defineComponent({
   props: {
     organizer: {
 	type: String,
-	requuired: true,
+	required: true,
     },
 
     place: {
 	type: String,
-	requuired: true,
+	required: true,
     },	
 	
     date: {
 	type: Number,
-	requuired: true,
+	required: true,
     }	
   },
   
