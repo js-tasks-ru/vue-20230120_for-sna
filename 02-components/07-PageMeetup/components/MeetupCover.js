@@ -6,7 +6,7 @@ export default defineComponent({
   props: {
     title: {
 	type: String,
-	required: true,
+		required: true,
     },
 
     image : {
@@ -19,6 +19,6 @@ export default defineComponent({
 	<div class="meetup-cover" :style="image && {'--bg-url':\`url(\${image})\`}">
         <!-- Ссылка выше - пример верстки при наличии изображения, а не изображение по умолчанию. -->
         <!-- Изображение по умолчанию уже есть в стилях. Для его вывода достаточно не добавлять никаких стилей. -->
-          <h1 class="meetup-cover__title">[{{ title }}]</h1>
-       </div>`,
+        <h1 class="meetup-cover__title">[{{ title }}]</h1>
+    </div>`,
 });

@@ -212,7 +212,7 @@ export default [
       {
         id: 38,
         startsAt: '10:10',
-        endsAt: '09:30',
+        endsAt: '10:30',
         type: 'break',
         title: 'Break 1.0',
         description: null,

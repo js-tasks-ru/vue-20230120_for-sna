@@ -5,7 +5,7 @@ export default defineComponent({
   name: 'MeetupAgenda',
 
   components: {
-    MeetupAgendaItem
+    MeetupAgendaItem,
   },  
   
   props: {
@@ -17,8 +17,8 @@ export default defineComponent({
   
   template: `  
     <ul class="agenda">	  
-        <li v-for="item in agenda" class="agenda__item">
-	    <MeetupAgendaItem :agendaItem="item" />
+    	<li v-for="item in agenda" class="agenda__item">
+		<MeetupAgendaItem :agendaItem="item" />
 	</li>
     </ul>`,	
 });

@@ -25,6 +25,11 @@ export default defineComponent({
 	return new Date(value).toISOString().substring(0,10);  
     }, 
 	 
+/*
+    formatAsLocalDate(value) {		 
+	return new Date(value).toLocaleDateString('ru-Ru');  
+    }	
+*/
     formatAsLocalDate(value) {		 
 	return new Date(value).toLocaleString(navigator.language, {
           year: 'numeric',
@@ -32,6 +37,7 @@ export default defineComponent({
           day: 'numeric',
         }) 
     }
+
   }, 
   
   template: `
